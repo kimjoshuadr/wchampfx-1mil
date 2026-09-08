@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apply — The $1M Funded Challenge | WChampFX</title>
+<meta name="description" content="Watch Dan Cheung break down the system behind $500k+ in verified prop firm payouts, then apply for the $1M Funded Challenge. Two-minute application.">
+<link rel="canonical" href="https://course.wchampfx.com/">
+<meta name="robots" content="index,follow">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="WChampFX">
+<meta property="og:title" content="The $1M Funded Challenge — with Dan Cheung">
+<meta property="og:description" content="The system behind $500k+ in verified payouts. Watch the video, then apply in 2 minutes.">
+<meta property="og:url" content="https://course.wchampfx.com/">
+<meta property="og:image" content="https://course.wchampfx.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The $1M Funded Challenge — with Dan Cheung">
+<meta name="twitter:description" content="The system behind $500k+ in verified payouts. Watch the video, then apply in 2 minutes.">
+<meta name="twitter:image" content="https://course.wchampfx.com/og-image.jpg">
+
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
+<style>
+:root{
+  --bg:#000000; --bg-2:#0a0a0a; --bg-3:#121212;
+  --line:#242424;
+  --gold:#e8b437; --gold-2:#f5d47a; --gold-dim:#8a6a1f;
+  --fg:#ffffff; --muted:#a8a8a8;
+  --max:1120px;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;scroll-behavior:smooth}
+html{scroll-behavior:smooth}
+img{max-width:100%}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
+section{padding:76px 0;border-top:1px solid var(--line)}
+h1,h2,h3{line-height:1.12;margin:0 0 .5em;letter-spacing:-.02em}
+h1{font-size:clamp(2.1rem,6vw,4rem);font-weight:800}
+h2{font-size:clamp(1.6rem,3.6vw,2.5rem);font-weight:800}
+h3{font-size:1.12rem;font-weight:700;letter-spacing:0}
+p{margin:0 0 1em}
+.gold{color:var(--gold)}
+.muted{color:var(--muted)}
+.eyebrow{font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:14px}
+.center{text-align:center}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(0,0,0,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 22px;max-width:var(--max);margin:0 auto}
+.logo{font-weight:800;letter-spacing:.04em;font-size:1.02rem}
+.logo span{color:var(--gold)}
+.navlinks{display:none;gap:26px;font-size:.9rem}
+.navlinks a{color:var(--muted);text-decoration:none}
+.navlinks a:hover{color:var(--fg)}
+@media(min-width:900px){.navlinks{display:flex}}
+
+.btn{display:inline-block;background:linear-gradient(180deg,var(--gold-2),var(--gold));color:#0a0a0a;font-weight:800;text-decoration:none;padding:14px 30px;border-radius:8px;letter-spacing:.02em;transition:transform .15s ease,box-shadow .15s ease;box-shadow:0 6px 24px rgba(232,180,55,.18)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 32px rgba(232,180,55,.3)}
+.btn.sm{padding:10px 20px;font-size:.88rem}
+.btn.ghost{background:transparent;color:var(--gold);border:1px solid var(--gold-dim);box-shadow:none}
+
+/* hero */
+.hero{position:relative;padding:96px 0 84px;text-align:center;border-top:none;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(70% 55% at 50% 0%,rgba(232,180,55,.16),transparent 70%);pointer-events:none}
+.hero .wrap{position:relative}
+.pill{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--gold-dim);background:rgba(232,180,55,.07);color:var(--gold-2);border-radius:999px;padding:7px 16px;font-size:.8rem;font-weight:600;margin-bottom:26px}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(232,180,55,.2)}
+.sub{font-size:clamp(1.02rem,2.1vw,1.32rem);color:var(--muted);max-width:660px;margin:0 auto 30px}
+.pricebox{display:inline-flex;flex-direction:column;align-items:center;gap:2px;margin:6px 0 28px}
+.price{font-size:clamp(2.4rem,7vw,3.4rem);font-weight:800;color:var(--gold);letter-spacing:-.03em;line-height:1}
+.pricenote{font-size:.86rem;color:var(--muted)}
+.trustrow{display:flex;flex-wrap:wrap;gap:10px 30px;justify-content:center;margin-top:34px;font-size:.84rem;color:var(--muted)}
+.trustrow span::before{content:"✓";color:var(--gold);font-weight:800;margin-right:7px}
+
+/* generic grid */
+.grid{display:grid;gap:20px}
+@media(min-width:800px){.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}}
+.card{background:var(--bg-2);border:1px solid var(--line);border-radius:14px;padding:28px}
+.card.hl{border-color:var(--gold-dim);background:linear-gradient(180deg,rgba(232,180,55,.06),var(--bg-2))}
+.num{font-size:.72rem;letter-spacing:.16em;color:var(--gold);font-weight:800;text-transform:uppercase;margin-bottom:10px}
+ul.check{list-style:none;padding:0;margin:0}
+ul.check li{position:relative;padding-left:26px;margin-bottom:11px;color:var(--muted);font-size:.95rem}
+ul.check li::before{content:"";position:absolute;left:0;top:.55em;width:9px;height:9px;border-radius:2px;background:var(--gold);transform:rotate(45deg)}
+
+/* VSL */
+.vsl{position:relative;max-width:820px;margin:0 auto 34px;border-radius:16px;overflow:hidden;border:1px solid var(--gold-dim);box-shadow:0 24px 70px rgba(0,0,0,.7),0 0 0 6px rgba(232,180,55,.05)}
+.vsl-ratio{position:relative;width:100%;padding-top:56.25%;background:#0b0b0b}
+.vsl-ratio iframe,.vsl-ratio video{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vsl-empty{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center;padding:24px;background:radial-gradient(60% 60% at 50% 40%,rgba(232,180,55,.1),#0b0b0b)}
+.play{width:66px;height:66px;border-radius:50%;background:linear-gradient(180deg,var(--gold-2),var(--gold));display:flex;align-items:center;justify-content:center;box-shadow:0 8px 30px rgba(232,180,55,.3)}
+.play::after{content:"";border-left:19px solid #0a0a0a;border-top:12px solid transparent;border-bottom:12px solid transparent;margin-left:5px}
+.vsl-empty b{font-size:1rem}
+.vsl-empty small{color:var(--muted);font-size:.8rem;max-width:340px}
+
+/* trustpilot-style reviews */
+.tp-head{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px 18px;margin-bottom:34px}
+.stars{display:inline-flex;gap:3px}
+.stars i{width:20px;height:20px;background:#00b67a;display:inline-flex;align-items:center;justify-content:center;border-radius:2px;font-style:normal}
+.stars i::after{content:"★";color:#fff;font-size:13px;line-height:1}
+.stars.sm i{width:17px;height:17px}
+.stars.sm i::after{font-size:11px}
+/* side-scrolling review gallery */
+.gallery{position:relative}
+.scroller{display:flex;gap:20px;overflow-x:auto;padding:4px 4px 18px;-webkit-overflow-scrolling:touch;
+  scrollbar-width:none;-ms-overflow-style:none;cursor:grab}
+.scroller::-webkit-scrollbar{display:none}
+.scroller.dragging{cursor:grabbing}
+.scroller.dragging *{user-select:none;pointer-events:none}
+.scroller > .review{flex:0 0 min(360px,82vw);align-self:flex-start}
+.review p{display:-webkit-box;-webkit-line-clamp:9;-webkit-box-orient:vertical;overflow:hidden}
+.vrf{color:#00b67a;font-size:.85em}
+/* edge fades so cut-off cards read as "more this way" */
+.gallery::before,.gallery::after{content:"";position:absolute;top:0;bottom:0;width:70px;pointer-events:none;z-index:2}
+.gallery::before{left:-4px;background:linear-gradient(90deg,var(--bg),transparent)}
+.gallery::after{right:-4px;background:linear-gradient(270deg,var(--bg),transparent)}
+.arrows{display:flex;justify-content:center;gap:12px;margin-top:6px}
+.arrow{width:44px;height:44px;border-radius:50%;border:1px solid var(--gold-dim);background:var(--bg-2);color:var(--gold);
+  font-size:1.1rem;line-height:1;display:flex;align-items:center;justify-content:center;cursor:pointer;
+  transition:background .15s ease,transform .15s ease}
+.arrow:hover{background:rgba(232,180,55,.12);transform:translateY(-2px)}
+.arrow:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){.scroller{scroll-behavior:auto}}
+
+.review{background:var(--bg-2);border:1px solid var(--line);border-radius:14px;padding:24px;display:flex;flex-direction:column;gap:14px}
+.rv-top{display:flex;align-items:center;gap:12px}
+.avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(180deg,var(--gold-2),var(--gold));color:#0a0a0a;font-weight:800;font-size:.86rem;display:flex;align-items:center;justify-content:center;flex:0 0 auto;letter-spacing:.02em}
+.rv-name{font-weight:700;font-size:1rem;line-height:1.2}
+.rv-meta{font-size:.78rem;color:var(--muted)}
+.review h3{margin:0;font-size:1.02rem}
+.review p{margin:0;color:var(--muted);font-size:.94rem}
+.placeholder{border:1px dashed var(--gold-dim);background:rgba(232,180,55,.04);border-radius:10px;padding:14px 16px;font-size:.8rem;color:var(--gold-2);margin-top:26px}
+
+/* story */
+.story{background:linear-gradient(180deg,var(--bg-3),var(--bg-2));border:1px solid var(--line);border-radius:16px;padding:34px}
+.statrow{display:flex;flex-wrap:wrap;gap:14px;margin-top:24px}
+.stat{flex:1 1 150px;background:#0d0d0d;border:1px solid var(--line);border-radius:10px;padding:16px}
+.stat b{display:block;font-size:1.5rem;color:var(--gold);letter-spacing:-.02em}
+.stat span{font-size:.78rem;color:var(--muted)}
+
+/* cta band */
+.band{background:linear-gradient(180deg,rgba(232,180,55,.1),rgba(232,180,55,.02));border-top:1px solid var(--gold-dim);border-bottom:1px solid var(--gold-dim)}
+
+/* faq */
+details{border-bottom:1px solid var(--line);padding:18px 0}
+details summary{cursor:pointer;font-weight:700;font-size:1.02rem;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:"+";color:var(--gold);font-size:1.4rem;font-weight:400;line-height:1}
+details[open] summary::after{content:"−"}
+details p{margin:12px 0 0;color:var(--muted);font-size:.95rem}
+
+footer{padding:56px 0 44px;border-top:1px solid var(--line);background:#050505}
+.flinks{display:flex;flex-wrap:wrap;gap:8px 24px;font-size:.86rem;margin-bottom:26px}
+.flinks a{color:var(--muted);text-decoration:none}
+.flinks a:hover{color:var(--gold)}
+.disclaimer{font-size:.72rem;color:#6b6b6b;line-height:1.65;max-width:900px}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <div class="logo">WCHAMP<span>FX</span></div>
+    <div class="navlinks">
+      
+    </div>
+    <a class="btn sm js-apply" href="#">Apply Now</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="pill"><span class="dot"></span> Applications open &nbsp;·&nbsp; Limited places this intake</div>
+    <h1>The <span class="gold">$1M Funded Challenge</span></h1>
+    <p class="sub">Dan Cheung has taken over <strong style="color:#fff">$500k</strong> in verified payouts from prop firms. In this video he breaks down exactly how &mdash; and who the challenge is for.</p>
+
+    <!-- VSL: paste your embed into #vsl-slot (see CONFIG at bottom) -->
+    <div class="vsl">
+      <div class="vsl-ratio" id="vsl-slot">
+        <div class="vsl-empty">
+          <div class="play"></div>
+          <b>Your VSL goes here</b>
+          <small>Add the YouTube, Vimeo or Wistia embed URL to <code>vslEmbedUrl</code> in the CONFIG block at the bottom of this file.</small>
+        </div>
+      </div>
+    </div>
+
+    <p class="muted" style="font-size:.8rem;margin:-18px 0 30px">
+      Video not playing? <a class="js-watch" href="#" style="color:var(--gold)">Watch it on YouTube&nbsp;&#8599;</a>
+    </p>
+
+    <div><a class="btn js-apply" href="#">Apply For The Challenge</a></div>
+    <p class="muted" style="font-size:.86rem;margin-top:16px">Takes 2 minutes &nbsp;·&nbsp; 7 questions &nbsp;·&nbsp; We reply within 5 minutes</p>
+
+    <div class="trustrow">
+      <span>$500k+ in verified payouts</span>
+      <span>Self-paced, any schedule</span>
+      <span>Private Discord community</span>
+    </div>
+  </div>
+</section>
+
+<section id="results">
+  <div class="wrap">
+    <div class="center" style="max-width:640px;margin:0 auto 22px">
+      <div class="eyebrow">Verified Reviews</div>
+      <h2>What students actually say</h2>
+    </div>
+    <div class="tp-head">
+      <span class="stars"><i></i><i></i><i></i><i></i><i></i></span>
+      <span class="muted" style="font-size:.9rem">Rated <b style="color:#fff">5.0</b> by WChampFX students on Trustpilot</span>
+    </div>
+    <div class="gallery">
+      <div class="scroller" id="reviews" tabindex="0" role="region" aria-label="Student reviews, scrollable"></div>
+    </div>
+    <div class="arrows">
+      <button class="arrow" id="rvPrev" aria-label="Previous reviews">&#8249;</button>
+      <button class="arrow" id="rvNext" aria-label="Next reviews">&#8250;</button>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="center" style="max-width:640px;margin:0 auto 40px">
+      <div class="eyebrow">Before you apply</div>
+      <h2>Who this is for</h2>
+    </div>
+    <div class="grid g2">
+      <div class="card">
+        <h3>Apply if you're</h3>
+        <ul class="check">
+          <li>Serious about passing a funded challenge, not browsing</li>
+          <li>Willing to follow one strategy instead of hopping</li>
+          <li>Able to commit properly &mdash; this is a paid programme</li>
+          <li>Coachable, and honest about what isn't working</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Don't apply if you're</h3>
+        <ul class="check">
+          <li>Looking for signals to copy without learning</li>
+          <li>Expecting guaranteed profits &mdash; nobody can give you that</li>
+          <li>Hoping to make it back on your next trade</li>
+          <li>Not in a position to invest in this right now</li>
+        </ul>
+      </div>
+    </div>
+    <div class="center" style="margin-top:40px">
+      <a class="btn js-apply" href="#">Apply For The Challenge</a>
+      <p class="muted" style="font-size:.82rem;margin-top:14px">If you're a fit, you'll get your next steps immediately.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="logo" style="margin-bottom:16px">WCHAMP<span>FX</span></div>
+    <div class="flinks">
+      <a href="terms.html">Terms & Conditions</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="returns.html">Returns Policy</a>
+    </div>
+    <p class="disclaimer">Risk Disclaimer: The foreign exchange market and currency trading is highly speculative in nature and as such, currency prices may become extremely volatile. You may sustain a total loss of your funds. Foreign exchange trading carries a high level of risk and may not be suitable for all investors. Always consult a financial professional before making any investment decisions. It is possible you will sustain a loss of some or all of your initial investment. No representation is being made that any account will or is likely to achieve profits or losses. Past performance is not indicative of future results. Individual results vary and no representation is made that you will or are likely to achieve profits or incur losses comparable to those that may be shown. You acknowledge and agree that no promise or guarantee of success or profitability has been made between you, and WChampfx FZE.</p>
+  </div>
+</footer>
+<script>
+/* ---- Trustpilot reviews. Add one by copying a block. Keep text verbatim. ---- */
+  var WCHAMPFX_REVIEWS = [
+    { name: "Eamon", loc: "GB", count: "1 review", date: "Dec 2024", verified: true,
+      title: "One of the best course money can buy, period",
+      body: "Honestly if you're not willing to spend money on education and self-development, you don't want it enough. This course has so much value not only in trading but also in the rest of my life even though this is mainly focused on trading. How you do one thing is how you do everything. Just listening to Dan speak on the videos and webinars just changed my perspective on everything for the better. The course can guide anyone to become profitable from beginners who have never seen a chart to ones who have a few years experience but aren't profitable yet, you just have to put the time in, no shortcuts." },
+
+    { name: "Hector Guzman", loc: "US", count: "2 reviews", date: "Mar 2024",
+      title: "Quality Training for Trader's at Any Exp. Level",
+      body: "I'm feeling really good that I took the chance and spent the money for this course. I have several years of trading under my belt. I've been profitable some years and not other years. The information I've received here has been valuable and the improvement in my trades has been quick and noticeable. This course is for trader's with no experience to those with years under their belt." },
+
+    { name: "Fidencio Barasa", loc: "KE", count: "8 reviews", date: "Jan 2025", verified: true,
+      title: "This is the best and most intensive…",
+      body: "This is the best and most intensive course I've gone through so far in my about 15yrs trading experience! It has given me an immediate turnaround in my trading to profitability." },
+
+    { name: "Gareth", loc: "GB", count: "4 reviews", date: "",
+      title: "Great value for money, great in-depth content",
+      body: "Been trading since 2019, and had previously been members of other communities. Saw that Dan was able to trade on lower time frames, so after assessing the course and back testing, I would highly recommend it." },
+
+    { name: "om khan", loc: "GB", count: "3 reviews", date: "Jan 2025",
+      title: "Unlike other groups",
+      body: "Unlike other groups, this groups actually checks up on you to see how things are going incase you need help. I am in few groups and this is the best. Dan and his staff are super and got nothing but good things to say about them." },
+
+    { name: "Vay Thi", loc: "GB", count: "1 review", date: "",
+      title: "Amazing!",
+      body: "This year bootcamp was absolutely amazing! The trading course is packed with so much information, and Dan is a fantastic mentor. He has genuinely inspired me to remain disciplined and consistent throughout my trading journey." },
+
+    { name: "customer", loc: "GB", count: "8 reviews", date: "Dec 2024",
+      title: "So far exceptional content and mentoring",
+      body: "It is quite early days, but the value up to now has been exceptional. Great educational content and Dan and the team are guys you can just connect with. Looking forward to remembering them all when I've made it and able to gift them. :) if you're serious about trading then join." },
+
+    { name: "Wassim Aoun", loc: "FR", count: "1 review", date: "Jan 2025",
+      title: "Go for it",
+      body: "What's making this all great for me personally is that we have direct access to the mentor himself whose answering all our questions. Great strategy as well. Thank you Dan" },
+
+    { name: "Fariborz E", loc: "GB", count: "2 reviews", date: "Mar 2024",
+      title: "Amazing",
+      body: "Experience of joining Dan's team has helped me level up and gain tremendous experience from ground up to become consistent in my trading journey. You can learn a lot even if you are inexperienced trader or have some experience in trading." },
+
+    { name: "Adel Nusrat", loc: "GB", count: "1 review", date: "",
+      title: "He is genuine & practical",
+      body: "He is genuine & practical. Giving you direction with what it actually takes to make it." },
+
+    { name: "Kgosi", loc: "ZA", count: "5 reviews", date: "Mar 2024", verified: true,
+      title: "Champ made trading simple with…",
+      body: "Champ made trading simple with motivation with prove of payout from his skill and strategy i am not on webside yet but i am coming because i know i am going to eat pure proven strategy from him" }
+
+    // To add Gareth Yau's review (the cut-off one), copy a block above and fill it in.
+  ];
+
+  
+  /* ============================================================
+     CONFIG — EDIT THESE, NOTHING ELSE
+     ============================================================ */
+  var WCHAMPFX_CONFIG = {
+    // 1. VSL embed URL. YouTube: use the /embed/ form, not /watch?v=
+    //    Leave "" to keep the placeholder frame showing.
+    vslEmbedUrl:   "https://www.youtube.com/embed/2w0LOPf658U?rel=0&modestbranding=1&playsinline=1",
+
+    // Fallback for anyone whose network or browser blocks the embed.
+    vslWatchUrl:   "https://youtu.be/2w0LOPf658U",
+    
+    // 2. The application. Every button on this page points here.
+    //    The checkout is NOT on this page by design — it lives on
+    //    the Typeform's "Yes, I'm ready" ending.
+    typeformUrl:   "https://form.typeform.com/to/kteHRTTw",
+    
+    // 3. Discord support ticket invite
+    discordUrl:    "https://discord.gg/REPLACE_ME"
+  };
+
+  (function () {
+    var c = WCHAMPFX_CONFIG;
+
+    // Forward tracking params from the incoming URL so every click carries
+    // the campaign that produced it.
+    function withParams(base) {
+      var PASS = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "ref"];
+      var incoming = new URLSearchParams(window.location.search);
+      var out = [];
+      PASS.forEach(function (k) {
+        var v = incoming.get(k);
+        if (v) out.push(encodeURIComponent(k) + "=" + encodeURIComponent(v));
+      });
+      ["fbclid", "gclid"].forEach(function (k) {
+        var v = incoming.get(k);
+        if (v) out.push("ref=" + encodeURIComponent(k + ":" + v));
+      });
+      if (!out.length) return base;
+      return base + (base.indexOf("?") > -1 ? "&" : "?") + out.join("&");
+    }
+
+    function wire(sel, url) {
+      document.querySelectorAll(sel).forEach(function (a) {
+        a.href = withParams(url);
+        a.target = "_blank";
+        a.rel = "noopener";
+      });
+    }
+
+    wire(".js-apply",   c.typeformUrl);
+    if (c.vslWatchUrl) wire(".js-watch", c.vslWatchUrl);
+    wire(".js-discord", c.discordUrl);
+/* ---- review gallery: auto-scroll, drag, arrows, seamless loop ---- */
+    (function () {
+      var sc = document.getElementById("reviews");
+      if (!sc) return;
+
+      // Build the cards from WCHAMPFX_REVIEWS.
+      function esc(t) {
+        return String(t).replace(/[&<>"]/g, function (m) {
+          return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[m];
+        });
+      }
+      function initials(n) {
+        var p = n.trim().split(/\s+/);
+        return (p.length > 1 ? p[0][0] + p[1][0] : p[0].slice(0, 2)).toUpperCase();
+      }
+      sc.innerHTML = WCHAMPFX_REVIEWS.map(function (r) {
+        return '<article class="review">' +
+            '<div class="rv-top">' +
+              '<div class="avatar">' + esc(initials(r.name)) + '</div>' +
+              '<div><div class="rv-name">' + esc(r.name) +
+                (r.verified ? ' <span class="vrf" title="Verified">&#10003;</span>' : '') +
+              '</div>' +
+              '<div class="rv-meta">' + esc(r.loc) + ' &middot; ' + esc(r.count) +
+                (r.date ? ' &middot; ' + esc(r.date) : '') +
+              '</div></div>' +
+            '</div>' +
+            '<span class="stars sm"><i></i><i></i><i></i><i></i><i></i></span>' +
+            '<h3>' + esc(r.title) + '</h3>' +
+            '<p>' + esc(r.body) + '</p>' +
+          '</article>';
+      }).join("");
+
+      // Duplicate the cards once so the loop has somewhere to run to.
+      var originals = Array.prototype.slice.call(sc.children);
+      var setWidth = 0;
+      originals.forEach(function (card) {
+        sc.appendChild(card.cloneNode(true));
+      });
+      function measure() {
+        setWidth = 0;
+        var gap = parseFloat(getComputedStyle(sc).gap) || 20;
+        originals.forEach(function (card) { setWidth += card.offsetWidth + gap; });
+      }
+      measure();
+      window.addEventListener("resize", measure);
+
+      // Wrap silently when we cross into the cloned set (or scroll back past zero).
+      function normalise() {
+        if (setWidth <= 0) return;
+        if (sc.scrollLeft >= setWidth) sc.scrollLeft -= setWidth;
+        else if (sc.scrollLeft < 0)    sc.scrollLeft += setWidth;
+      }
+      sc.addEventListener("scroll", normalise, { passive: true });
+
+      // Arrows
+      function step(dir) {
+        var card = sc.querySelector(".review");
+        var gap  = parseFloat(getComputedStyle(sc).gap) || 20;
+        sc.scrollBy({ left: dir * ((card ? card.offsetWidth : 340) + gap), behavior: "smooth" });
+      }
+      var prev = document.getElementById("rvPrev"), next = document.getElementById("rvNext");
+      if (prev) prev.addEventListener("click", function () { pause(); step(-1); });
+      if (next) next.addEventListener("click", function () { pause(); step(1); });
+
+      // Drag to scroll (mouse)
+      var down = false, startX = 0, startScroll = 0, moved = false;
+      sc.addEventListener("mousedown", function (e) {
+        down = true; moved = false;
+        startX = e.pageX; startScroll = sc.scrollLeft;
+        pause();
+      });
+      window.addEventListener("mouseup", function () {
+        down = false; sc.classList.remove("dragging");
+      });
+      window.addEventListener("mousemove", function (e) {
+        if (!down) return;
+        var dx = e.pageX - startX;
+        if (!moved && Math.abs(dx) > 4) { moved = true; sc.classList.add("dragging"); }
+        if (moved) { e.preventDefault(); sc.scrollLeft = startScroll - dx; normalise(); }
+      });
+
+      // Gentle auto-scroll; stops for 6s after any interaction, off if reduced-motion.
+      var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var paused = false, resumeTimer = null;
+      function pause() {
+        paused = true;
+        clearTimeout(resumeTimer);
+        resumeTimer = setTimeout(function () { paused = false; }, 6000);
+      }
+      ["touchstart", "focusin"].forEach(function (ev) {
+        sc.addEventListener(ev, pause, { passive: true });
+      });
+      // Hover pauses so a long review can be read, but resumes quickly on exit.
+      sc.addEventListener("mouseenter", function () { paused = true; });
+      sc.addEventListener("mouseleave", function () {
+        clearTimeout(resumeTimer);
+        resumeTimer = setTimeout(function () { paused = false; }, 400);
+      });
+      // Only a HORIZONTAL wheel gesture counts as interacting with the gallery.
+      // Plain vertical page scrolling used to pause it for 6s, which made the
+      // whole thing look broken whenever someone scrolled down to it.
+      sc.addEventListener("wheel", function (e) {
+        if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) pause();
+      }, { passive: true });
+      // The browser floors sub-pixel scrollLeft writes, so `pos` — not the element —
+      // is the source of truth. Reading scrollLeft back each tick would reset it to 0.
+      var pos = null, last = 0;
+      var SPEED = 28;   // pixels per second
+
+      function frame(now) {
+        if (reduce) return;                       // respect reduced-motion
+        var dt = last ? (now - last) / 1000 : 0;
+        last = now;
+        if (dt > 0.1) dt = 0.1;                   // clamp after a tab-switch
+
+        if (paused || down || document.hidden) {
+          pos = null;
+        } else {
+          if (pos === null) pos = sc.scrollLeft;  // resync only on resume
+          pos += SPEED * dt;                      // time-based, so speed is
+                                                  // identical on 60/120Hz screens
+          if (setWidth > 0 && pos >= setWidth) pos -= setWidth;  // seamless wrap
+          sc.scrollLeft = pos;
+        }
+        requestAnimationFrame(frame);
+      }
+      if (!reduce) requestAnimationFrame(frame);
+    })();
+
+    
+
+    if (c.vslEmbedUrl) {
+      var slot = document.getElementById("vsl-slot");
+      if (slot) {
+        slot.innerHTML =
+          '<iframe src="' + c.vslEmbedUrl + '" title="WChampFX challenge video" ' +
+          'allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" ' +
+          'allowfullscreen loading="lazy"></iframe>';
+      }
+    }
+
+  })();
+</script>
+</body>
+</html>
